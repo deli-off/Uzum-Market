@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="icon" type="image/svg+xml" href="./assets/icons/xhml.svg">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>uzumMarket</title>
+   <link rel="stylesheet" href="./css/style.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+   <script>
+      let userData = JSON.parse(localStorage.getItem('user'));
+      if (userData === null) {
+         location.assign('../pages/login.html');
+      }
+   </script>
+   <script src="/modules/header.js" type="module"></script>
+   <script src="/modules/function.js" type="module"></script>
+</head>
+
+<body>
+   <div id="app">
+      <header class="header"></header>
+      <div class="header-list">
+      </div>
+      <main class="main container">
+         <section class="swiper-section">
+            <div class="swiper">
+               <div class="swiper-wrapper"></div>
+               <div class="swiper-pagination"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+            </div>
+         </section>
+         <section class="section popular-section">
+            <h2>Популярное</h2>
+            <div class="wrapper popular-section__wrapper" data-type="popular"></div>
+         </section>
+         <section class="section household-section">
+            <h2 class="sections-title">Бытовая техника</h2>
+            <div class="wrapper wr household-section__wrapper" data-type="kitchen"></div>
+         </section>
+         <section class="section furniture-section">
+            <h2 class="sections-title">Мебель</h2>
+            <div class="wrapper wr furniture-section__wrapper" data-type="furniture"></div>
+         </section>
+         <section class="section leisure-section">
+            <h2 class="sections-title">Активный отдых</h2>
+            <div class="wrapper wr leisure-section__wrapper" data-type="TV"></div>
+         </section>
+         <section class="section pc-section">
+            <h2 class="sections-title">Компьютеры
+            </h2>
+            <div class="wrapper wr pc-section__wrapper" data-type="PC"></div>
+         </section>
+         <section class="section music-section">
+            <h2 class="sections-title">Для музыки</h2>
+            <div class="wrapper wr music-section__wrapper" data-type="audio"></div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+      <div class="body-active"></div>
+      <script src="/modules/ui.js" type="module"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="/modules/footer.js" type="module"></script>
+      <script src="/modules/swiper.js" type="module"></script>
+</body>
+
+</html>

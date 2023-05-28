@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="icon" type="image/svg+xml" href="../assets/icons/xhml.svg">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Категория</title>
+   <link rel="stylesheet" href="/css/style.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+   <div class="container">
+      <header class="header"></header>
+      <div class="header-list">
+      </div>
+      <main class="main ">
+         <section class="section categories-section">
+            <div class="way">
+               <a href="/" class="way__main">Главная /</a>
+               <a href="http://localhost:5173/pages/categories.html" class="way__categories">Каталог</a>
+            </div>
+            <div class="categories-section__title title">
+               <div class="title__h">Категории</div>
+               <div class="title__box">
+                  <div class="title__text">Сортировка</div>
+                  <div class="form-group title__select">
+                     <div class="dropdown">
+                        <button class="dropdown__button">Популярное</button>
+                        <ul class="dropdown__list">
+                           <li class="dropdown__list-item" data-value="popular">Популярное</li>
+                           <li class="dropdown__list-item" data-value="news">Новые</li>
+                        </ul>
+                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="wrapper categories">
+               <div class="categories__left left-block">
+
+                  <div class="left-block__coll">
+                     <div class="left-block__title">
+                        Категории
+                     </div>
+                     <div class="left-block__coll-title">
+                        <img src="../assets/images/pseudo.png" alt="arrow">
+                        Все категории
+                     </div>
+                     <ul class="left-block__ul">
+                        <li>
+                           <a href="#" data-type="furniture">Мебель</a>
+                        </li>
+                        <li>
+                           <a href="#" data-type="PC">Компютерная техника</a>
+                        </li>
+                        <li>
+                           <a href="#" data-type="audio">Наушники и аудиотехника</a>
+                        </li>
+                        <li>
+                           <a href="#" data-type="TV">Телевизоры</a>
+                        </li>
+                        <li>
+                           <a href="#" data-type="kitchen">Для кухни</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="left-block__price-filter price-fl">
+                     <div class="left-block__title price-fl__title">Цена</div>
+                     <div class="price-fl__input-collection">
+                        <input type="number" class="price-fl__input" maxlength="8" minlength="4" min="1000"
+                           max="5000000" data-from="1000" placeholder="от  1000">
+                        <input type="number" class="price-fl__input" maxlength="8" minlength="4" min="1000"
+                           max="5000000" data-to="5000000" placeholder="до  5000000">
+                     </div>
+                     <div class="filter-line">
+                        <input class="range" id="budget" type="range" min="1000" max="500000" value="500000">
+                        <input class="range --pos" id="budget-min" type="range" min="1000" max="500000" value="1000">
+                        <div class="range-number"><span id="min"></span><span id="max"></span></div>
+                     </div>
+                  </div>
+                  <div class="left-block__brend brend">
+                     <div class="left-block__title brend__title">Бренд</div>
+                     <ul class="brend__ul">
+                        <li>
+                           <input type="checkbox" id="1" data-type="latt liv"> <label for="1"> Latt liv</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="2" data-type="ssmart"> <label for="2">SSMART</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="3" data-type="1more"> <label for="3">1MORE</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="4" data-type="7saber"> <label for="4">7saber</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="5" data-type="hagibis"> <label for="5">HAGIBIS</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" id="6" data-type="novey"> <label for="6">Novey</label>
+                        </li>
+                     </ul>
+                     <a href="#" class="more">Ещё <span>927+</spa>
+                     </a>
+                  </div>
+               </div>
+               <div class="categories__collection">
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   <footer class="footer"></footer>
+   <div class="body-active"></div>
+   <script src="/modules/header.js" type="module"></script>
+   <script src="/modules/categories.js" type="module"></script>
+   <script src="/modules/footer.js" type="module"></script>
+</body>
+
+</html>
